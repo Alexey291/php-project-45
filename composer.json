@@ -1,0 +1,21 @@
+{
+    "name": "project/php-project-45",
+    "description": "проект 45",
+    "autoload": {
+        "files": [
+            "src/Cli.php"
+        ]
+    },
+    "authors": [
+        {
+            "name": "Алексей Чеузов",
+            "email": "alexeyblack77@gmail.com"
+        }
+    ],
+    "bin": [
+        "bin/brain-games"
+    ],
+    "require": {
+            "wp-cli/php-cli-tools": "^0.12.6"
+    }
+}
