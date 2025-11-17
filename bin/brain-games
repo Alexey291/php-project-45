@@ -13,4 +13,5 @@ use BrainGames\Cli;
 
 $cli = new Cli();
 
-$cli->greetUser();
+$name = $cli->greetUser();
+$name = escapeshellarg($name);
