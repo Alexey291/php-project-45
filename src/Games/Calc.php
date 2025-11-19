@@ -25,7 +25,7 @@ function runCalcGame(): void
         $question = sprintf('%d %s %d', $operand1, $operation, $operand2);
         $correctAnswer = calculate($operand1, $operand2, $operation);
 
-        return [$question, (string) $correctAnswer];
+        return [$question, (string)$correctAnswer];
     });
 }
 

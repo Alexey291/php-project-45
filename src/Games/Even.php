@@ -19,12 +19,13 @@ function runEvenGame(): void
     $rule = 'Answer "yes" if the number is even, otherwise answer "no".';
 
     runGame(
-     $rule, function (): array {
-        $number = random_int(1, 100);
-        $question = (string) $number;
-        $correctAnswer = isEven($number) ? 'yes' : 'no';
+        $rule,
+        function (): array {
+            $number = random_int(1, 100);
+            $question = (string)$number;
+            $correctAnswer = isEven($number) ? 'yes' : 'no';
 
-        return [$question, $correctAnswer];
-    });
+            return [$question, $correctAnswer];
+        }
+    );
 }
-

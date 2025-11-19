@@ -34,4 +34,3 @@ function gcd(int $a, int $b): int
 
     return $a;
 }
-

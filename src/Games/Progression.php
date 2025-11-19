@@ -39,4 +39,3 @@ function generateProgression(int $start, int $step, int $length): array
 
     return $progression;
 }
-

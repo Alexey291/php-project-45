@@ -37,4 +37,3 @@ function runGame(string $rule, callable $makeRound): void
 
     line('Congratulations, %s!', $name);
 }
-
