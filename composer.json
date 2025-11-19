@@ -1,5 +1,5 @@
 {
-    "name": "project/php-project-45",
+    "name": "hexlet/code",
     "description": "проект 45",
     "autoload": {
         "files": [
