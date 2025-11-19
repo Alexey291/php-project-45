@@ -3,7 +3,6 @@
 namespace BrainGames\Games\Calc;
 
 use InvalidArgumentException;
-
 use Random\RandomException;
 
 use function BrainGames\runGame;
@@ -38,4 +37,3 @@ function calculate(int $operand1, int $operand2, string $operation): int
         default => throw new InvalidArgumentException("Unsupported operation: {$operation}"),
     };
 }
-
