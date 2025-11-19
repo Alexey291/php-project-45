@@ -9,9 +9,7 @@ if (file_exists($autoloadPath1)) {
 } else {
     require_once $autoloadPath2;
 }
-use BrainGames\Cli;
+use function BrainGames\greetUser;
 
-$cli = new Cli();
-
-$name = $cli->greetUser();
+$name = greetUser();
 $name = escapeshellarg($name);
