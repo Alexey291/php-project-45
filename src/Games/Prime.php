@@ -6,14 +6,15 @@ use Random\RandomException;
 
 use function BrainGames\runGame;
 
+const RULE = 'Answer "yes" if given number is prime. Otherwise answer "no".';
+
 /**
  * @throws RandomException
  */
 function runPrimeGame(): void
 {
-    $rule = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
-    runGame($rule, function (): array {
+    runGame(RULE, function (): array {
         $number = random_int(1, 100);
         $question = (string) $number;
         $correctAnswer = isPrime($number) ? 'yes' : 'no';

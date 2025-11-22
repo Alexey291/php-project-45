@@ -6,20 +6,15 @@ use Random\RandomException;
 
 use function BrainGames\runGame;
 
-function isEven(int $number): bool
-{
-    return $number % 2 === 0;
-}
+const RULE = 'Answer "yes" if the number is even, otherwise answer "no".';
 
 /**
  * @throws RandomException
  */
 function runEvenGame(): void
 {
-    $rule = 'Answer "yes" if the number is even, otherwise answer "no".';
-
     runGame(
-        $rule,
+        RULE,
         function (): array {
             $number = random_int(1, 100);
             $question = (string)$number;
@@ -28,4 +23,9 @@ function runEvenGame(): void
             return [$question, $correctAnswer];
         }
     );
+}
+
+function isEven(int $number): bool
+{
+    return $number % 2 === 0;
 }

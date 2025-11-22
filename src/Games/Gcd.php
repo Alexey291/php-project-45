@@ -6,14 +6,15 @@ use Random\RandomException;
 
 use function BrainGames\runGame;
 
+const RULE = 'Find the greatest common divisor of given numbers.';
+
 /**
  * @throws RandomException
  */
 function runGcdGame(): void
 {
-    $rule = 'Find the greatest common divisor of given numbers.';
 
-    runGame($rule, function (): array {
+    runGame(RULE, function (): array {
         $number1 = random_int(1, 100);
         $number2 = random_int(1, 100);
 

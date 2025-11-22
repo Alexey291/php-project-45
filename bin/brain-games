@@ -9,7 +9,9 @@ if (file_exists($autoloadPath1)) {
 } else {
     require_once $autoloadPath2;
 }
-use function BrainGames\greetUser;
+use function cli\line;
+use function cli\prompt;
 
-$name = greetUser();
+$name = prompt('May I have your name?');
+line("Hello, %s!", $name);
 $name = escapeshellarg($name);

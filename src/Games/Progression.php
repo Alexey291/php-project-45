@@ -6,14 +6,15 @@ use Random\RandomException;
 
 use function BrainGames\runGame;
 
+const RULE = 'What number is missing in the progression?';
+
 /**
  * @throws RandomException
  */
 function runProgressionGame(): void
 {
-    $rule = 'What number is missing in the progression?';
 
-    runGame($rule, function (): array {
+    runGame(RULE, function (): array {
         $length = random_int(5, 10);
         $start = random_int(1, 20);
         $step = random_int(1, 10);

@@ -14,7 +14,8 @@ function runGame(string $rule, callable $makeRound): void
 {
     line('Welcome to the Brain Games!');
 
-    $name = greetUser();
+    $name = prompt('May I have your name?');
+    line("Hello, %s!", $name);
 
     line($rule);
 

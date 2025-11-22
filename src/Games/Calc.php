@@ -7,14 +7,15 @@ use Random\RandomException;
 
 use function BrainGames\runGame;
 
+const RULE = 'What is the result of the expression?';
+
 /**
  * @throws RandomException
  */
 function runCalcGame(): void
 {
-    $rule = 'What is the result of the expression?';
 
-    runGame($rule, function (): array {
+    runGame(RULE, function (): array {
         $operations = ['+', '-', '*'];
 
         $operand1 = random_int(0, 100);
