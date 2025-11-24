@@ -19,13 +19,13 @@ function runGcdGame(): void
         $number2 = random_int(1, 100);
 
         $question = sprintf('%d %d', $number1, $number2);
-        $correctAnswer = gcd($number1, $number2);
+        $correctAnswer = getGcd($number1, $number2);
 
         return [$question, (string) $correctAnswer];
     });
 }
 
-function gcd(int $a, int $b): int
+function getGcd(int $a, int $b): int
 {
     while ($b !== 0) {
         $temp = $b;
